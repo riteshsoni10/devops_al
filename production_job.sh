@@ -30,6 +30,7 @@ elif sudo docker ps -a | grep "prod_web"; then
 
 else
 	echo "Production is not live. Going on Live now"
+	sudo docker network create --subnet 10.100.20.0/24 --driver bridge prod_application
 	sudo docker run -dit --network prod_application -v /opt/prod/:/usr/local/apache2/htdocs/ --name prod_web -p 80:80 httpd:alpine
 
 fi
