@@ -34,3 +34,17 @@ fi
 echo "Initialising Production Environment"
 sudo docker run -dit --network prod_application -v /opt/prod/:/usr/local/apache2/htdocs/ --name prod_web -p 80:80 httpd:alpine
 
+### Tunneling and providing production URL to client
+
+if ! ls /usr/local/bin | grep "ngrok" > /dev/null; then
+	
+	# Install Required tools, if not present
+	yum install -y wget unzip
+	
+	#Installting NGROK binary
+	wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null
+	unzip ngrok-stable-linux-amd64.zip -d /usr/local/bin/
+	
+	#Starting tunnneling
+	nohup ngrok http 80
+	
