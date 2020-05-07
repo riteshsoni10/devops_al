@@ -212,7 +212,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 </p>
 
 <p align="center">
-  <img src="screenshots/development_branch_page.png" width="650" title="Development Branch Front-End">
+  <img src="screenshots/development_branch_page.png" width="450" title="Development Branch Front-End">
   <br>
   <em>Fig 13.: Development Branch Front-End </em>
 </p>
@@ -224,7 +224,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 </p>
 
 <p align="center">
-  <img src="screenshots/production_web_after_merge.png" width="650" title="Production Environment after merge">
+  <img src="screenshots/production_web_after_merge.png" width="450" title="Production Environment after merge">
   <br>
   <em>Fig 15.:Production Environment after merge </em>
 </p>
