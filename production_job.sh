@@ -59,6 +59,9 @@ else
 	
 fi
 
+To fetch Public URL using JQuery
+yum -y install jq
+
 # Fetching Public URL
 PUBLIC_URL="$(curl http://localhost:4040/api/tunnels | jq ".tunnels[0].public_url")"
 
