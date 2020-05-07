@@ -267,6 +267,6 @@ Production Branch gets updated and will look like as shown below.
 >
 > Under guidance of: [Mr. Vimal Daga](https://in.linkedin.com/in/vimaldaga)
 >
-> Owner: [Ritesh Kumar](https://www.linkedin.com/in/riteshsoni10)
+> Written By: [Ritesh Kumar](https://www.linkedin.com/in/riteshsoni10)
 >
 > DevOps Assemply Lines Task 
