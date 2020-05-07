@@ -122,9 +122,14 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 3. In Step 6.
     Replace the contents of script with following code
     
-    ```
+    ``` 
     #!/bin/bash
+    ##Merging development Branch into master
     git merge origin/development
+
+    ## Pushing code to master
+    git push origin HEAD:master
+
     ```
     
 4. Apply and Save
