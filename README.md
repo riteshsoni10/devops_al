@@ -193,6 +193,39 @@ The similiar steps are needed to be followed as for `Production Environment` wit
     ```
     git checkout -b development
     ```
-    
+<p align="center">
+  <img src="screenshots/development_branch_initial_step.png" width="650" title="Development Branch Initial Push">
+  <br>
+  <em>Fig 10.: Development Branch Initial Push </em>
+</p>
 
+<p align="center">
+  <img src="screenshots/development_branch_change.png" width="650" title="Development Branch ">
+  <br>
+  <em>Fig 11.: Feature Change in Development Branch </em>
+</p>
+
+<p align="center">
+  <img src="screenshots/post-commit-hook.png" width="650" title="Development Branch ">
+  <br>
+  <em>Fig 12.: Staging and Commit and Automated Push Feature Change in Development Branch </em>
+</p>
+
+<p align="center">
+  <img src="screenshots/development_branch_page.png" width="650" title="Development Branch Front-End">
+  <br>
+  <em>Fig 13.: Development Branch Front-End </em>
+</p>
+
+<p align="center">
+  <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
+  <br>
+  <em>Fig 14.: Production Environment before Merge </em>
+</p>
+
+<p align="center">
+  <img src="screenshots/production_web_after_merge.png" width="650" title="Production Environment after merge">
+  <br>
+  <em>Fig 15.:Production Environment after merge </em>
+</p>
     
