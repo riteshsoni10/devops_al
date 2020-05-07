@@ -27,7 +27,7 @@ Let's start with the configuration of **JENKINS Jobs**
 2. Click on `New Item` in the left column
 
 <p align="center">
-  <img src="screenshots/production_job_first_page.png" width="950" title="Production Job Diagram">
+  <img src="screenshots/production_job_first_page.png" width="800" title="Production Job Diagram">
   <br>
   <em>Fig 2.: New Job Diagram </em>
 </p>
@@ -37,7 +37,7 @@ Let's start with the configuration of **JENKINS Jobs**
     - Enter the Github Project URL
 
 <p align="center">
-  <img src="screenshots/production_web_code_git.png" width="950" title="GitHub URL Diagram">
+  <img src="screenshots/production_web_code_git.png" width="800" title="GitHub URL Diagram">
   <br>
   <em>Fig 3.: GitHub URL Configuration </em>
 </p> 
@@ -48,7 +48,7 @@ Let's start with the configuration of **JENKINS Jobs**
     In `branches to build` variable, the branch from which the code will be downloaded is to be configured. In our case, since this job is for production environment, the master branch is configured.
 
 <p align="center">
-  <img src="screenshots/production_job_scm_configure.png" width="950" title="SCM Configuration Diagram">
+  <img src="screenshots/production_job_scm_configure.png" width="800" title="SCM Configuration Diagram">
   <br>
   <em>Fig 4.: Production Job SCM Configuration </em>
 </p>
@@ -60,7 +60,7 @@ Let's start with the configuration of **JENKINS Jobs**
     `Poll SCM trigger` checks for any changes in the branch of the repository during the interval configured. Currently, the Poll SCM interval is configured to validate for changes in the branch at an interval of every minute.
 
 <p align="center">
-  <img src="screenshots/production_poll_scm.png" width="950" title="Build Triggers Diagram">
+  <img src="screenshots/production_poll_scm.png" width="800" title="Build Triggers Diagram">
   <br>
   <em>Fig 5.: Production Build Trigger Configuration </em>
 </p>
@@ -81,7 +81,7 @@ The similiar steps are needed to be followed as for Production Environment with 
     Change the `branches to build` variable with the `development` branch; so that development branch code can be used for testing environment deployment
 
 <p align="center">
-  <img src="screenshots/test_env_job_scm.png" width="950" title="Test Environment Diagram">
+  <img src="screenshots/test_env_job_scm.png" width="800" title="Test Environment Diagram">
   <br>
   <em>Fig 6.: Test Environment SCM Configuration </em>
 </p>
@@ -114,7 +114,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
     ```
 
 <p align="center">
-  <img src="screenshots/qa_approval.png" width="950" title="QAT Build Trigger Diagram">
+  <img src="screenshots/qa_approval.png" width="800" title="QAT Build Trigger Diagram">
   <br>
   <em>Fig 7.: QAT Build Trigger Configuration </em>
 </p>
@@ -155,7 +155,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
    ```
 
 <p align="center">
-  <img src="screenshots/developer_initial_configuration.png" width="950" title="Initial git Hub Configuration">
+  <img src="screenshots/developer_initial_configuration.png" width="650" title="Initial git Hub Configuration">
   <br>
   <em>Fig 8.: Developer Initial  GitHub Configuration </em>
 </p>
@@ -177,7 +177,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
    ```
    
 <p align="center">
-  <img src="screenshots/development_branch_post-commit-hook.png" width="950" title="Post Commit Hooks Configuration">
+  <img src="screenshots/development_branch_post-commit-hook.png" width="650" title="Post Commit Hooks Configuration">
   <br>
   <em>Fig 9.: GitHub Post-Commit Configuration </em>
 </p>
