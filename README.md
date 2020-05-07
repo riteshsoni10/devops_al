@@ -188,7 +188,8 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 </p>
 
 4. Create a branch from master branch i.e development branch
-    The development branch is used for testing new features i.e for test Environment. The new changes are pushed into this branch. After proper approval by the QAT that the code is ready to go for production. The QAT team remotely builds the *job* `qa_approval`, to merge the development branch with master branch
+
+  The development branch is used for testing new features i.e for test Environment. The new changes are pushed into this branch. After proper approval by the QAT that the code is ready to go for production. The QAT team remotely builds the *job* `qa_approval`, to merge the development branch with master branch
     
     ```
     git checkout -b development
@@ -199,11 +200,28 @@ The similiar steps are needed to be followed as for `Production Environment` wit
   <em>Fig 10.: Development Branch Initial Push </em>
 </p>
 
+5. Current Live Production Environment
+
+  The production is currently live with the master branch code.
+
+<p align="center">
+  <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
+  <br>
+  <em>Fig 14.: Production Environment  </em>
+</p>
+
+6. New Feature Request in Production Environment
+
+  Suppose, A new feature request arrived from Client, that from the customer point of view, headline `Login Portal` is not looking appropriate now. A change request was raised to change the headline of the form to `Students Login` and `login` button to `submit` button. The developers start working into the code by pull master branch code in development. They have successfully changed the code in their local.
 <p align="center">
   <img src="screenshots/development_branch_change.png" width="650" title="Development Branch ">
   <br>
   <em>Fig 11.: Feature Change in Development Branch </em>
 </p>
+
+7. Commit the change in development
+
+  As soon as developer commits the change in `development branch`, the autmated push in development branch is triggered by `post-commit hook`. 
 
 <p align="center">
   <img src="screenshots/post-commit-hook.png" width="650" title="Development Branch ">
@@ -211,17 +229,17 @@ The similiar steps are needed to be followed as for `Production Environment` wit
   <em>Fig 12.: Staging and Commit and Automated Push Feature Change in Development Branch </em>
 </p>
 
+8. After New changes in Development Branch
+
+  As soon as new change is detected in development branch, the *Jenkins job* `test_env_web_code` is *triggered* and the new code is deployed in Test Environment.
+
 <p align="center">
   <img src="screenshots/development_branch_page.png" width="450" title="Development Branch Front-End">
   <br>
   <em>Fig 13.: Development Branch Front-End </em>
 </p>
 
-<p align="center">
-  <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
-  <br>
-  <em>Fig 14.: Production Environment before Merge </em>
-</p>
+
 
 <p align="center">
   <img src="screenshots/production_web_after_merge.png" width="450" title="Production Environment after merge">
