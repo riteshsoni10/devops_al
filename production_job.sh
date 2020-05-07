@@ -46,5 +46,15 @@ if ! ls /usr/local/bin | grep "ngrok" > /dev/null; then
 	unzip ngrok-stable-linux-amd64.zip -d /usr/local/bin/
 	
 	#Starting tunnneling
-	nohup ngrok http 80
+	nohup ngrok http 80 &
+
+else
+	if ps -ef | grep "ngrok http 80" | grep -v grep; then
+		echo "Tunnel alreaady running"
+	else
+		#Starting tunnneling
+		nohup ngrok http 80 &
+	fi
+fi
+
 	
