@@ -200,7 +200,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 </p>
 
 <p align="center">
-  <img src="screenshots/development_branch_change.png" width="650" title="Development Branch ">
+  <img src="screenshots/deelopment_branch_initial_step.png" width="650" title="Development Branch ">
   <br>
   <em>Fig 11.: Feature Change in Development Branch </em>
 </p>
