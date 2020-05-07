@@ -11,7 +11,7 @@ Sometimes deployment can be very tidious task from cloning the code from the Git
 - Git
 
 
-# Installation
+### Installation
 
 - Clone this repository to add scripts for Jenkins Jobs
 
@@ -20,7 +20,7 @@ Sometimes deployment can be very tidious task from cloning the code from the Git
 
 Let's start with the configuration of JENKINS job 
 
-### for Production Environment. 
+#### for Production Environment. 
 
 1. Login into jenkins GUI
 2. Click on `New Item` in the left column
@@ -45,7 +45,19 @@ Let's start with the configuration of JENKINS job
  7. Apply and then Save the Job
  
  
-### for Development Environment 
+#### for Development Environment 
+
+The similiar steps are needed to be followed as for Production Environment with some changes
+
+1. Creat a new job with name 
+2. In Step 4
+    Change the `branches to build` variable with the `development` branch; so that development branch code can be used for testing environment deployment
+
+2. In Step 6
+    Rplace the contents of production_job.sh script with test_environment_job.sh bash script.
+
+3. Apply and Save
+        
 `
 asdadad
 ```
