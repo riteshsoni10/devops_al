@@ -202,8 +202,10 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 
 5. Current Live Production Environment
 
-  The **production** is currently live with the `master branch` code.
-
+  The **production** is currently live with the `master branch` code. The production can be accessed from the public URL, that will be displayed on the successfful Production Jenkins JOB run i.e `production_web_code`. 
+  
+  The `public URL` for the *production* can be found at **console output** of the production Jenkins JOB. The tunneling is created using `ngrok server`.
+  
 <p align="center">
   <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
   <br>
@@ -213,6 +215,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 6. New Feature Request in Production Environment
 
   Suppose, A new feature request arrived from Client, that from the customer point of view, headline `Login Portal` is not looking appropriate now. A change request was raised to change the headline of the form to `Students Login` and `login` button to `submit` button. The developers start working into the code by pull master branch code in development. They have successfully changed the code in their local.
+  
 <p align="center">
   <img src="screenshots/development_branch_change.png" width="650" title="Development Branch ">
   <br>
