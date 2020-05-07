@@ -64,9 +64,32 @@ The similiar steps are needed to be followed as for Production Environment with 
 
 The Jenkins Job Enables the QAT to merge the development branch into master branch on proper testing of development branch.
 
+The similiar steps are needed to be followed as for `Production Environment` with some changes
 
+1. Create a new Job named qa_approval
+2. In Step 5
+    Select the `Trigger builds remotely` Option, since the QAT team will trigger job remotely from any script as soon as they find the code in development branch is ready to go for production.
+    
+    In `Authentication Token`, a random token is used for authentication. The same token is needed to be passed along with the remote URL like
+    ```
+    Authentication Token=HYPULpvi1RDdcE5EeUh5iTnT8iycr9Cx
+    JENKINS_URL=192.168.10.140 
+    
+    > 192.168.10.140 is Jenkins Server IP
+    
+   http://JENKINS_URL/job/qa_approval/build?token=HYPULpvi1RDdcE5EeUh5iTnT8iycr9Cx
+    
+    ```
 
-
+3. In Step 6.
+    Replace the contents of script with following code
+    
+    ```
+    #!/bin/bash
+    git merge origin/development
+    ```
+    
+4. Apply and Save
 
 ### Development Team
 
@@ -101,7 +124,7 @@ The Jenkins Job Enables the QAT to merge the development branch into master bran
     cd .git/hooks
     ```
     
-    Add the below lines in file named `post-commit` inside the hooks directory
+    Add the below lines in file named `post-commit` inside the `hooks` directory
     ```
     #!/bin/bash
     echo "Pushing Code to Remote repository"
@@ -109,5 +132,12 @@ The Jenkins Job Enables the QAT to merge the development branch into master bran
     echo "Successfully Pushed code"
    ```
    
+4. Create a branch from master branch i.e development branch
+    The development branch is used for testing new features i.e for test Environment. The new changes are pushed into this branch. After proper approval by the QAT that the code is ready to go for production. The QAT team remotely builds the *job* `qa_approval`, to merge the development branch with master branch
+    
+    ```
+    git checkout -b development
+    ```
+    
 
     
