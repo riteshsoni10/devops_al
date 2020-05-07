@@ -29,7 +29,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_job_first_page.png" width="800" title="Production Job Diagram">
   <br>
-  <em>Fig 2.: New Job Diagram </em>
+  <em>Fig 1.: New Job Diagram </em>
 </p>
 
 3. Enable GitHub Project
@@ -39,7 +39,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_web_code_git.png" width="800" title="GitHub URL Diagram">
   <br>
-  <em>Fig 3.: GitHub URL Configuration </em>
+  <em>Fig 2.: GitHub URL Configuration </em>
 </p> 
  
 4. Configure the Source Code Management
@@ -50,7 +50,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_job_scm_configure.png" width="800" title="SCM Configuration Diagram">
   <br>
-  <em>Fig 4.: Production Job SCM Configuration </em>
+  <em>Fig 3.: Production Job SCM Configuration </em>
 </p>
 
 
@@ -62,7 +62,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_poll_scm.png" width="800" title="Build Triggers Diagram">
   <br>
-  <em>Fig 5.: Production Build Trigger Configuration </em>
+  <em>Fig 4.: Production Build Trigger Configuration </em>
 </p>
 
 6. Build
@@ -83,7 +83,7 @@ The similiar steps are needed to be followed as for Production Environment with 
 <p align="center">
   <img src="screenshots/test_env_job_scm.png" width="800" title="Test Environment Diagram">
   <br>
-  <em>Fig 6.: Test Environment SCM Configuration </em>
+  <em>Fig 5.: Test Environment SCM Configuration </em>
 </p>
 
 2. In Step 6
@@ -92,7 +92,7 @@ The similiar steps are needed to be followed as for Production Environment with 
 3. Apply and Save
       
 
-#### For Quality Assurance Team
+#### For Quality Assurance Testing Team
 
 The Jenkins Job Enables the QAT to merge the development branch into master branch on proper testing of development branch.
 
@@ -116,7 +116,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/qa_approval.png" width="800" title="QAT Build Trigger Diagram">
   <br>
-  <em>Fig 7.: QAT Build Trigger Configuration </em>
+  <em>Fig 6.: QAT Build Trigger Configuration </em>
 </p>
 
 3. In Step 6.
@@ -162,11 +162,11 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/developer_initial_configuration.png" width="650" title="Initial git Hub Configuration">
   <br>
-  <em>Fig 8.: Developer Initial  GitHub Configuration </em>
+  <em>Fig 7.: Developer Initial  GitHub Configuration </em>
 </p>
 
 3. Configure the post-Commit Hooks
-    Configuration of  post commit hooks to automate the code push to remote repository
+    Configuration of  `post commit hooks` to automate the code push to remote repository
     
     ```sh
     cd /web-code
@@ -184,7 +184,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/development_branch_post-commit-hook.png" width="650" title="Post Commit Hooks Configuration">
   <br>
-  <em>Fig 9.: GitHub Post-Commit Configuration </em>
+  <em>Fig 8.: GitHub Post-Commit Configuration </em>
 </p>
 
 4. Create a branch from master branch i.e development branch
@@ -197,17 +197,17 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/deelopment_branch_initial_step.png" width="650" title="Development Branch Initial Push">
   <br>
-  <em>Fig 10.: Development Branch Initial Push </em>
+  <em>Fig 9.: Development Branch Initial Push </em>
 </p>
 
 5. Current Live Production Environment
 
-  The production is currently live with the master branch code.
+  The **production** is currently live with the `master branch` code.
 
 <p align="center">
   <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
   <br>
-  <em>Fig 14.: Production Environment  </em>
+  <em>Fig 10.: Production Environment  </em>
 </p>
 
 6. New Feature Request in Production Environment
@@ -240,10 +240,22 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 </p>
 
 
+### Quality Assurance Testing Team
+
+QAT Team has been provided with the Test Environment IP i.e 192.168.1433.140:8085 to test new changes in the Test Environment. If they are satisfied with the new changes ie. no bugs are found, they trigger the **remote Build URL** for the `qa_approval` Jenkins JOB which merges the deevelopment branch with master branch.
+
+```
+Remote Build URL:
+http://192.168.0.104:8080/job/qa_approval/build?token=HYPULpvi1RDdcE5EeUh5iTnT8iycr9Cx
+```
+
+When the development branch is merged with the master branch, the JENKINS JOB `production_web_code` will be triggered in the next `POLL SCM interval`, which deploys the development branch code in Production Branch.
+
+Production Branch gets updated and will look like as shown below.
 
 <p align="center">
   <img src="screenshots/production_web_after_merge.png" width="450" title="Production Environment after merge">
   <br>
-  <em>Fig 15.:Production Environment after merge </em>
+  <em>Fig 14.:Production Environment after merge </em>
 </p>
     
