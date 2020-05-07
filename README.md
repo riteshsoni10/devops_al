@@ -242,7 +242,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 
 ### Quality Assurance Testing Team
 
-QAT Team has been provided with the Test Environment IP i.e 192.168.1433.140:8085 to test new changes in the Test Environment. If they are satisfied with the new changes ie. no bugs are found, they trigger the **remote Build URL** for the `qa_approval` Jenkins JOB which merges the deevelopment branch with master branch.
+QAT Team has been provided with the Test Environment IP i.e 192.168.143.140:8085 to test new changes in the Test Environment. If they are satisfied with the new changes ie. no bugs are found, they trigger the **remote Build URL** for the `qa_approval` Jenkins JOB which merges the deevelopment branch with master branch.
 
 ```
 Remote Build URL:
