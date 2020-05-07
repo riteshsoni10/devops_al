@@ -260,8 +260,8 @@ Production Branch gets updated and will look like as shown below.
 </p>
     
 
-> Source: LinuxWorld Informatics Pvt. Ltd
+> Source: [LinuxWorld Informatics Pvt. Ltd](http://www.linuxworldindia.org/)
 >
-> Under guidance of: Mr. Vimal Daga
+> Under guidance of: [Mr. Vimal Daga](https://in.linkedin.com/in/vimaldaga)
 >
 > DevOps Assemply Lines Task 
