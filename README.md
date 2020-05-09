@@ -4,6 +4,12 @@ Sometimes deployment can be very tidious task from cloning the code from the Git
 
 ##### Sample Project
 
+<p align="center">
+  <img src="screenshots/devops_assembly_line_task_flow.jpgg" width="800" title="Production Job Diagram">
+  <br>
+  <em>Fig 1.: Process Flow Diagram </em>
+</p>
+
 
 ## Pre-requisites
 - Docker Engine
@@ -29,7 +35,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_job_first_page.png" width="800" title="Production Job Diagram">
   <br>
-  <em>Fig 1.: New Job Diagram </em>
+  <em>Fig 2.: New Job Diagram </em>
 </p>
 
 3. Enable GitHub Project
@@ -39,7 +45,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_web_code_git.png" width="800" title="GitHub URL Diagram">
   <br>
-  <em>Fig 2.: GitHub URL Configuration </em>
+  <em>Fig 3.: GitHub URL Configuration </em>
 </p> 
  
 4. Configure the Source Code Management
@@ -50,7 +56,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_job_scm_configure.png" width="800" title="SCM Configuration Diagram">
   <br>
-  <em>Fig 3.: Production Job SCM Configuration </em>
+  <em>Fig 4.: Production Job SCM Configuration </em>
 </p>
 
 
@@ -62,7 +68,7 @@ Let's start with the configuration of **JENKINS Jobs**
 <p align="center">
   <img src="screenshots/production_poll_scm.png" width="800" title="Build Triggers Diagram">
   <br>
-  <em>Fig 4.: Production Build Trigger Configuration </em>
+  <em>Fig 5.: Production Build Trigger Configuration </em>
 </p>
 
 6. Build
@@ -83,7 +89,7 @@ The similiar steps are needed to be followed as for Production Environment with 
 <p align="center">
   <img src="screenshots/test_env_job_scm.png" width="800" title="Test Environment Diagram">
   <br>
-  <em>Fig 5.: Test Environment SCM Configuration </em>
+  <em>Fig 6.: Test Environment SCM Configuration </em>
 </p>
 
 2. In Step 6
@@ -116,7 +122,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/qa_approval.png" width="800" title="QAT Build Trigger Diagram">
   <br>
-  <em>Fig 6.: QAT Build Trigger Configuration </em>
+  <em>Fig 7.: QAT Build Trigger Configuration </em>
 </p>
 
 3. In Step 6.
@@ -162,7 +168,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/developer_initial_configuration.png" width="650" title="Initial git Hub Configuration">
   <br>
-  <em>Fig 7.: Developer Initial  GitHub Configuration </em>
+  <em>Fig 8.: Developer Initial  GitHub Configuration </em>
 </p>
 
 3. Configure the post-Commit Hooks
@@ -184,7 +190,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/development_branch_post-commit-hook.png" width="650" title="Post Commit Hooks Configuration">
   <br>
-  <em>Fig 8.: GitHub Post-Commit Configuration </em>
+  <em>Fig 9.: GitHub Post-Commit Configuration </em>
 </p>
 
 4. Create a branch from master branch i.e development branch
@@ -197,7 +203,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/deelopment_branch_initial_step.png" width="650" title="Development Branch Initial Push">
   <br>
-  <em>Fig 9.: Development Branch Initial Push </em>
+  <em>Fig 10.: Development Branch Initial Push </em>
 </p>
 
 5. Current Live Production Environment
@@ -209,7 +215,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/prod_web_welcome_page.png" width="650" title="Production Environment before Merge">
   <br>
-  <em>Fig 10.: Production Environment  </em>
+  <em>Fig 11.: Production Environment  </em>
 </p>
 
 6. New Feature Request in Production Environment
@@ -219,7 +225,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/development_branch_change.png" width="650" title="Development Branch ">
   <br>
-  <em>Fig 11.: Feature Change in Development Branch </em>
+  <em>Fig 12.: Feature Change in Development Branch </em>
 </p>
 
 7. Commit the change in development
@@ -229,7 +235,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/post-commit-hook.png" width="650" title="Development Branch ">
   <br>
-  <em>Fig 12.: Staging and Commit and Automated Push Feature Change in Development Branch </em>
+  <em>Fig 13.: Staging and Commit and Automated Push Feature Change in Development Branch </em>
 </p>
 
 8. After New changes in Development Branch
@@ -239,7 +245,7 @@ The similiar steps are needed to be followed as for `Production Environment` wit
 <p align="center">
   <img src="screenshots/development_branch_page.png" width="450" title="Development Branch Front-End">
   <br>
-  <em>Fig 13.: Development Branch Front-End </em>
+  <em>Fig 14.: Development Branch Front-End </em>
 </p>
 
 
@@ -259,7 +265,7 @@ Production Branch gets updated and will look like as shown below.
 <p align="center">
   <img src="screenshots/production_web_after_merge.png" width="450" title="Production Environment after merge">
   <br>
-  <em>Fig 14.:Production Environment after merge </em>
+  <em>Fig 15.:Production Environment after merge </em>
 </p>
     
 
