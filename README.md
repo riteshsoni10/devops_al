@@ -5,7 +5,7 @@ Sometimes deployment can be very tidious task from cloning the code from the Git
 ##### Sample Project
 
 <p align="center">
-  <img src="screenshots/devops_assembly_line_task_flow.jpgg" width="800" title="Production Job Diagram">
+  <img src="screenshots/devops_assembly_line_task_flow.jpg" width="800" title="Production Job Diagram">
   <br>
   <em>Fig 1.: Process Flow Diagram </em>
 </p>
