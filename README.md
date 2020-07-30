@@ -15,7 +15,7 @@ Sometimes deployment can be very tidious task from cloning the code from the Git
 - Docker Engine
 - Jenkins
 - Git
-
+- Configure SSH Key Based Authentication from Jenkins Server to GitHub
 
 ## Installation
 
